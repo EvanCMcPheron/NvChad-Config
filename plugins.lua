@@ -1,9 +1,25 @@
 local M = {
-  
+
+  {
+    "williamboman/mason.nvim",
+    lazy = false,
+    opts = {
+      ensure_installed = require("custom.languages.lsp")
+    }
+  },
+
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require("plugins.configs.lspconfig")
+      require("custom.configs.lspconfig")
+    end,
+  },
+
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
-      ensure_installed = {"html", "css", "rust", "python"}
+      ensure_installed = require("custom.languages.languages"),
     },
   },
 
@@ -13,7 +29,7 @@ local M = {
     config = function()
       require "custom.configs.truezen"
     end,
-  }
+  },
 
 }
 return M

@@ -3,5 +3,6 @@
  M.ui = {theme = 'catppuccin'}
  M.plugins = "custom.plugins"
  M.mappings = require("custom.mappings")
+ M.ui = require("custom.uioverride")
  return M
 

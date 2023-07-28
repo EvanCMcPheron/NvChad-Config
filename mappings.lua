@@ -1,9 +1,9 @@
 local M = {}
 
-M.abc = {
+M.Custom = {
   n = {
     [";"] = { ":", "enter cmdlin", opts = {nowait = true}},
-    ---------- True Zen ----------
+    ---------- TrueZen ----------
     ["<leader>za"] = { ":TZNarrow<CR>", "Zen Ataraxis" },
     ["<leader>zm"] = { ":TZMinimalist<CR>", "Zen Minimalist" },
     ["<leader>zn"] = { ":TZNarrow<CR>", "Zen Narrow" },
@@ -15,8 +15,10 @@ M.abc = {
         require("true-zen.minimaist").off()
         require("true-zen.narrow").off()
         require("true-zen.focus").off()
-      end
-    }
+      end,
+      "Turn off all true-zen modes"
+    },
   },
 }
+
 return M
