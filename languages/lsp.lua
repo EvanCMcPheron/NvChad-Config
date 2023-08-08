@@ -2,6 +2,7 @@
 
 local LSPs = {
   "rust_analyzer",
-  "lua_ls",
+  "html-lsp",
+  "css-lsp",
 }
 return LSPs

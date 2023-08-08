@@ -1,6 +1,8 @@
 local M = {
   "python",
   "rust",
-  "lua"
+  "lua",
+  "css",
+  "html",
 }
 return M
