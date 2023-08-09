@@ -1,0 +1,5 @@
+require("mini.animate").setup()
+require("mini.cursorword").setup()
+require("mini.map").setup()
+require("mini.move").setup()
+require("mini.doc").setup()
