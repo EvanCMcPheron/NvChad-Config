@@ -19,7 +19,7 @@ M.Custom = {
       "Turn off all true-zen modes",
     },
   },
-  ["<leader>mm"] = {}
+  ["<leader>mm"] = {},
   ["<leader>md"] = {},
 }
 
