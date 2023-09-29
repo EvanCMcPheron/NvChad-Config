@@ -18,9 +18,31 @@ M.Custom = {
       end,
       "Turn off all true-zen modes",
     },
+    -- ["<leader>mm"] = {},
+    -- ["<leader>md"] = {},
+    -- ["<C-m>"] = {"", "rust-tools hover actions"},
+    -- ["<leader>a"] = {"", "rust-tools code action group"},
+    ["<leader>ci"] = {
+      function ()
+        if vim.g.inlay_hints then
+          vim.g.inlay_hints = false
+          require("rust-tools").inlay_hints.disable()
+          print(vim.g.inlay_hints)
+        else
+          vim.g.inlay_hints = true
+          require("rust-tools").inlay_hints.enable()
+          print(vim.g.inlay_hints)
+        end
+      end,
+      "Toggle Rust Inlay Hints",
+    },
+    ["<leader>cm"] = {
+      function ()
+        require("rust-tools").expand_macro.expand_macro()
+      end
+    },
   },
-  ["<leader>mm"] = {},
-  ["<leader>md"] = {},
 }
+
 
 return M

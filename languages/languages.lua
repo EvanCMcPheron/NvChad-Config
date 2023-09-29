@@ -4,5 +4,7 @@ local M = {
   "lua",
   "css",
   "html",
+  "cpp",
+  "c",
 }
 return M

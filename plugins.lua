@@ -32,12 +32,28 @@ local M = {
   },
 
   {
-    "nvimdev/guard.nvim",
-    lazy = false,
-    config = function()
-      require "custom.configs.guard"
+    "simrat39/rust-tools.nvim",
+    ft = "rust",
+    config = function ()
+      require "custom.configs.rust-tools"
     end,
   },
+
+  {
+    "mfussenegger/nvim-dap",
+    lazy=false,
+    config = function ()
+      require "custom.configs.dap"
+    end,
+  },
+
+  -- {
+  --   "nvimdev/guard.nvim",
+  --   lazy = false,
+  --   config = function()
+  --     require "custom.configs.guard"
+  --   end,
+  -- },
 
   {
     "echasnovski/mini.nvim",

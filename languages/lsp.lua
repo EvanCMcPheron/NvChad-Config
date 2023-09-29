@@ -2,7 +2,6 @@
 
 local LSPs = {
   "rust_analyzer",
-  "html-lsp",
-  "stylua",
+  "clangd",
 }
 return LSPs
